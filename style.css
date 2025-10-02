@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+    margin-inline: auto;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.image {
+    flex: 2; /* less space */
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.transparent {
+    background-color: black;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100%;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.info {
+    background-color: #114636;
+    flex: 3; /* more space */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 2.7rem;
+    padding: 60px 0 0 54px;
+    font-weight: 560;
+}
+
+.form {
+    padding: 60px 54px;
+    width: 100%;
+}
+
+.r1, .r2, .r3 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.r1 .field,
+.r2 .field,
+.r3 .field {
+  flex: 1; /* Make each field take equal space */
+}
+
+
+.field {
+    position: relative;
+    margin-bottom: 40px;
+    display: block;
+}
+  
+.field input {
+    width: 100%;
+    padding: 16px 12px 16px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: none;
+    color: white;
+}
+  
+.field input::placeholder {
+    color: transparent; /* hide default placeholder */
+}
+  
+.field .label-text {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+}
+
+/* When input is focused OR has value, float the label */
+.field input:focus + .label-text, /* select the .label-text only when the input is focused */
+.field input:not(:placeholder-shown) + .label-text { /* this keeps the label floating up after the user has typed something in */
+    top: 4px;
+    left: 8px;
+    font-size: 0.75rem;
+    color: #f1f1f1;
+    background-color: #114636;
+    padding: 0 4px;
+}
+
+/* Red border ONLY if field is invalid AND the user has typed something */
+.field input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+/* Green border ONLY if field is valid AND the user has typed something */
+.field input:valid:not(:placeholder-shown) {
+    border-color: rgb(5, 255, 5);
+}
+
+button {
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #46a058;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2c6b39;
+    transform: scale(1.02);
+}
+
+a {
+    color: rgb(3, 255, 3);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="image">
+            <div class="transparent">
+                <h3>BeeGreen</h3>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M280-80v-160H0l154-240H80l280-400 120 172 120-172 280 400h-74l154 240H680v160H520v-160h-80v160H280Zm389-240h145L659-560h67L600-740l-71 101 111 159h-74l103 160Zm-523 0h428L419-560h67L360-740 234-560h67L146-320Zm0 0h155-67 252-67 155-428Zm523 0H566h74-111 197-67 155-145Zm-149 80h160-160Zm201 0Z"/></svg>
+            </div>
+        </div>
+
+        <div class="info">
+            <h1>Get started</h1>
+            
+            <form method="post" class="form">
+                <div class="r1">
+                    <label class="field">
+                        <input type="text" name="first-name" placeholder=" " required />
+                        <span class="label-text">First name</span>
+                    </label>
+    
+                    <label class="field">
+                        <input type="text" name="last-name" placeholder=" " required />
+                        <span class="label-text">Last name</span>
+                    </label>
+                </div>
+
+                <div class="r2">
+                    <label class="field">
+                        <input type="email" name="email" placeholder=" " required />
+                        <span class="label-text">Email</span>
+                    </label>
+    
+                    <label class="field">
+                        <input type="tel" name="tel" placeholder=" " required />
+                        <span class="label-text">Phone number</span>
+                    </label>
+                </div>
+
+                <div class="r3">
+                    <label class="field">
+                        <input type="password" name="password" placeholder=" " required />
+                        <span class="label-text">Password</span>
+                    </label>
+    
+                    <label class="field">
+                        <input type="password" name="password-confirm" placeholder=" " required />
+                        <span class="label-text">Confirm password</span>
+                    </label>
+                </div>
+
+                <button type="submit">Create Account</button>
+
+                <p>Already have an account? <a>Log in</a></p>
+            </form>
+        </div>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
