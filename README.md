@@ -1,4 +1,4 @@
-# 🌱 BeeGreen - Sign Up Form
+# BeeGreen - Sign Up Form
 
 A responsive **sign-up form** built with HTML CSS, and JavaScript, themed around sustainability and clean design.  
 
@@ -8,7 +8,7 @@ The form includes input validation, password strength checking, and clear visual
 
 ## Preview
 
-<img width="1440" height="737" alt="image" src="https://github.com/user-attachments/assets/a3cbf15b-2872-4e4a-8920-6a829fce5523" />
+<img width="1440" height="738" alt="image" src="https://github.com/user-attachments/assets/3b890609-96c8-46c9-bc1b-c78777d357a5" />
 
 ---
 
