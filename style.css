@@ -25,22 +25,24 @@ main {
 
 .image {
     flex: 2; /* less space */
-    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-.transparent {
-    background-color: black;
-    opacity: 0.4;
-    height: 100vh;
-    width: 100%;
+.image h3 {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 1rem 0 1rem;
 }
 
-h3 {
-    font-size: 2.5rem;
-    color: white;
+.image p {
+    color: #ddd;
+    padding: 0 0 0 1rem;
+    font-size: 1.1rem;
 }
 
 .info {
@@ -81,6 +83,11 @@ h1 {
     position: relative;
     margin-bottom: 40px;
     display: block;
+}
+
+.field .feedback {
+    position: absolute;
+    font-size: 0.95rem;
 }
   
 .field input {
@@ -132,6 +139,7 @@ h1 {
 button {
     width: 200px;
     padding: 15px;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 6px;
